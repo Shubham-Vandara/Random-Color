@@ -4,6 +4,7 @@ const h1 = document.querySelector("h1");
 const div = document.querySelector("div");
 div.style.textAlign = "center";
 
+// click event on button
 btn.addEventListener("click", () => {
   const newColor = makeRandom();
   document.body.style.backgroundColor = newColor;
