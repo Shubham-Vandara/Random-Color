@@ -1,5 +1,6 @@
 // Select the element
 const btn = document.querySelector("button");
+const rgbColor = document.querySelector(".rgb");
 const h1 = document.querySelector("h1");
 const div = document.querySelector("div");
 div.style.textAlign = "center";
@@ -16,11 +17,13 @@ const makeRandom = () => {
   const g = Math.floor(Math.random() * 255);
   const b = Math.floor(Math.random() * 255);
   if (r < 128 && (g < 128) & (b < 128)) {
-    h1.style.color = "white";
+    rgbColor.style.color = "white";
+    h1.style.color = "white"
   } else {
-    h1.style.color = "black";
+    rgbColor.style.color = "black";
+    h1.style.color = "black"
   }
-  h1.innerText = `RGB (${r}, ${g}, ${b})`;
+  rgbColor.innerText = `RGB (${r}, ${g}, ${b})`;
   return `rgb(${r},${g},${b})`;
 };
 
